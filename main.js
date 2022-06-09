@@ -1,5 +1,5 @@
 function getRandomNumber(min, max) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+  return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
 $(document).ready(function () {
@@ -8,13 +8,13 @@ $(document).ready(function () {
     // things.toggleClass("--now-it-is-red");
   }
 
-  let twoDigitNumber = getRandomNumber(10, 99);
+  let twoDigit = getRandomNumber(10, 99);
   const twoDigitNumberOutput = $("#number1a");
-  twoDigitNumberOutput.html(twoDigitNumber);
+  twoDigitNumberOutput.html(twoDigit);
 
-  let threeDigitNumber = getRandomNumber(100, 999);
+  let threeDigit = getRandomNumber(100, 999);
   const threeDigitNumberOutput = $("#number1b");
-  threeDigitNumberOutput.html(threeDigitNumber);
+  threeDigitNumberOutput.html(threeDigit);
 
   // let threeDigitNumber = getRandomNumber(100, 999);
   // const threeDigitNumberOutput = $("#number1b");
@@ -24,27 +24,42 @@ $(document).ready(function () {
   // const threeDigitNumberOutput = $("#number1b");
   // threeDigitNumberOutput.html(threeDigitNumber);
 
-  let operatorSelector = ("#add","#subtract","#multiply","#divide");
-  const operatorSelectorOutput = $("#operator1");
-  operatorSelectorOutput.html(threeDigitNumber);
+  // let operatorSelector = ("#add","#subtract","#multiply","#divide");
+  // const operatorSelectorOutput = $("#operator1");
+  // operatorSelectorOutput.html(operatorSelector);
 
-  
+$("button","#add").on("click",function() {
+  $("operator1").html("<p> + </p>");
+  })
+})
 
-  const toggleButton = $("#toggle-colour");
-  toggleButton.on("click", handleClick);
+  // switch $("#operator1") {
+  //   case $("button.add").click():
+  //     $("#operator1").html("+");
+  //     break;
 
-  const specialThing = $("#special-thing");
-  const output = $("#key-press");
+  //     case $("button.subtract").click():
+  //     $("#operator1").html("-");
+  //     break;
+  // }
 
-  $(document).on("keydown", function (event) {
-    output.html(event.key);
-    switch (event.key) {
-      case "a":
-        console.log("YOU PRESSED THE a KEY");
-        break;
-      case "b":
-        console.log("YOU PRESSED THE b KEY");
-        break;
-    }
-  });
-});
+  // console.log(operator)
+
+//   const toggleButton = $("#toggle-colour");
+//   toggleButton.on("click", handleClick);
+
+//   const specialThing = $("#special-thing");
+//   const output = $("#key-press");
+
+//   $(document).on("keydown", function (event) {
+//     output.html(event.key);
+//     switch (event.key) {
+//       case "a":
+//         console.log("YOU PRESSED THE a KEY");
+//         break;
+//       case "b":
+//         console.log("YOU PRESSED THE b KEY");
+//         break;
+//     }
+//   });
+// });
