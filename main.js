@@ -5,7 +5,7 @@ function getRandomNumber(min, max) {
 $(document).ready(function () {
   function handleClick() {
     const things = $(".thing");
-    // things.toggleClass("--now-it-is-blue");
+    // things.toggleClass("--now-it-is-red");
   }
 
   let twoDigitNumber = getRandomNumber(10, 99);
