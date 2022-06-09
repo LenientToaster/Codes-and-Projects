@@ -1,0 +1,41 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 20pt;
+  text-align: center;
+}
+
+.thing {
+  border: 1px solid red;
+  margin: 1rem;
+  background-color: powderblue;
+  text-align: center;
+}
+
+.--now-it-is-blue {
+  background-color: blue;
+  border-color: blue;
+}
+
+.numbers .operators .equals {
+  border: 1px navy;
+  margin: 1rem;
+  background-color: cornsilk;
+  padding: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+}
+
+output {
+  border: 1px navy;
+  background-color: cornsilk;
+  box-shadow: cornsilk;
+  padding: 1px;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+}
+
+select {
+  font-size: 16pt;
+}
