@@ -1,41 +1,132 @@
 body {
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20pt;
+  text-align: left;
+  background-color: rgb(16, 19, 33);
+}
+
+/* //for each of the panels e.g. welcome... */
+.panels { 
+  opacity: 60%;
+  border: 8px whitesmoke;
+  border-style: solid;
+  margin: 15px;
+  border-radius: 15px;
+}
+
+.title {
+  margin: auto;
+  width: 40%;
+  height: 60px;
+  background-color: rgb(127, 123, 123);
+  opacity: 100%;
+  text-align: center;
+  margin-bottom: 15px;
+  color: black;
+  font-size: 45pt;
+}
+
+.subhead {
+  margin-left: 10px;
+  width: 25%;
+  height: 50px;
+  background-color: rgb(127, 123, 123);
+  color: black;
+  opacity: 95%;
+  margin-bottom: -10px;
+  background-position: left;
+  text-align: center;
+}
+
+/* //this is for the main bulk of text */
+.para, ul { 
+  width: 95%;
+  color: white;
+  font-size: 17pt;
+  margin-left: 25px;
+}
+
+/* //this is for the <p> in the calculation */
+p {  
+  width: 95%;
+  color: white;
+  opacity: 100%;
+  font-size: 17pt;
+}
+
+/* //that bit that says novice coder... */
+.intropara { 
+  width: 95%;
+  color: white;
+  opacity: 100%;
   font-size: 20pt;
   text-align: center;
+  margin-top: -8px;
+}
+.button {
+  background-color: lightgrey;
+  color: black;
+  border-color: black;
+  border-width: 1px;
+  padding: 15px 32px;
+  text-align: center;
+  /* display: flex; */
+  object-position: center;
+  justify-content: center;
+  font-size: 12pt;
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 8px;
+  width: 150px;
+  float: center;
+  opacity: 0.6;
 }
 
-.thing {
-  border: 1px solid blue;
-  margin: 1rem;
-  background-color: powderblue;
+.button:hover {
+  opacity: 1;
+}
+
+#answerButton {
+  float: right;
+  margin-right: 15%;
+}
+
+#buttonDiv {
   text-align: center;
 }
 
-.--now-it-is-blue {
-  background-color: blue;
-  border-color: blue;
+div {
+  display:flex;
+  margin: 5px;
+  padding: 3px 3px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  float: center;
 }
 
-.numbers .operators .equals {
-  border: 1px navy;
-  margin: 1rem;
-  background-color: cornsilk;
-  padding: 5px;
-  white-space: nowrap;
-  overflow: hidden;
-  display: inline-block;
+div.calculation {
+  display: inline-flex;
+  width: 100px;
+  padding: 3px 3px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
-output {
-  border: 1px navy;
-  background-color: cornsilk;
-  box-shadow: cornsilk;
-  padding: 1px;
-  white-space: nowrap;
-  overflow: hidden;
-  display: inline-block;
+#calculatedAnswer {
+visibility: hidden;  
 }
 
-select {
-  font-size: 16pt;
+.parentDiv {
+  text-align: center;
 }
+
+#answer {
+  border: dotted grey;
+}
+
+section:hover {
+  opacity: 1;
+}
+
+
