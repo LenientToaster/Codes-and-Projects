@@ -8,7 +8,7 @@ function getRandomNumberBetween(min,max){
   return Math.floor(Math.random()*(max-min+1)+min);
 }
 
-£(document).ready(function() {
+$(document).ready(function() {
   $("#1stnum").html(getRandomNumberBetween);
   $("#2ndnum").html(getRandomNumberBetween);
 })  
